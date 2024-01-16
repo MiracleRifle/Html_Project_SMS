@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: #162938;
+}
+.slider{
+    width: 1500px;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 1500px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+/* .slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+} */
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
+
+.head3{
+    position: relative;
+    margin-top: -400px;
+    margin-left: 800px;
+    font-size: 5em;
+    color: #fff;
+    font-weight: 50;
+} 
+h3 span{
+    color: #fff;
+    position: relative;
+}
+h3 span::before {
+    content: "";
+    height: 60px;
+    width: 2px;
+    position: absolute;
+    top: 75%;
+    right: -8px;
+    background: #fff;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+h3 span.stop-blinking::before {
+    animation: none;
+}
+@keyframes blink {
+    50% { opacity: 0 }
+}
+.attack{
+    margin-top: 150px;
+    margin-left: 50px;
+}
+.head4{
+    position: relative;
+    margin-top: -600px;
+    margin-left: 600px;
+    font-size: 5em;
+
+    color: rgb(32, 134, 16)
+}
+.body1{
+    position: relative;
+    margin-left: 600px;
+    font-size: 2em;
+}
+.animated{
+    margin-top: 50px;
+    margin-left: 800px;
+
+}
+.head5{
+    position: relative;
+    margin-top: -400px;
+    margin-left: 20px;
+    font-size: 5em;
+    color: aquamarine;
+}
+.body2{
+    position: relative;
+    margin-left: 20px;
+    font-size: 2em;
+}
+.social{
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.head6,.head4{
+    position: relative;
+    margin-top: -550px;
+    margin-left: 850px;
+    font-size: 6em;
+    color: rgb(0, 247, 255);
+}
+.body3{
+    position: relative;
+    margin-left: 600px;
+    font-size: 2em;
+}
+.privacy {
+    text-align: center;
+    margin-top: 400px;
+    background-color: rgb(168, 168, 254);
+    ;
+}
+.button1{
+    
+    margin:-370px;
+    margin-top: 700px;
+    padding: 10px 30px;
+    font-family: "montserrat";
+    cursor: pointer;
+    border: 1px solid #3498db;
+    color: #000000;
+    background: none;
+    transition: 0.8s;
+    font-size: 20px;
+    overflow: hidden;
+}

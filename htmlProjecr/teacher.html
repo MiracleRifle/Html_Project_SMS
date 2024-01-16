@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Management</title>
+    <link rel="stylesheet" href="ddd.css">
+
+</head>
+<body>
+    <header style="border-radius: 10px;">
+        <h1 style="color: bisque;">Teacher Management System</h1>
+    </header>
+
+    <section id="app">
+        <div id="student-list">
+            <!-- Student list will be displayed here -->
+        </div>
+
+        <div id="add-student-form">
+            <h2>Add New Teacher</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Teacher name">
+
+            <label for="grade">Subjet:</label>
+            <input type="text" id="grade" placeholder="Enter Teaching Subject">
+
+            <button onclick="addStudent()">Add Teacher</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Student Management System</p>
+    </footer>
+
+    <script src="teach.js"></script>
+</body>
+</html>

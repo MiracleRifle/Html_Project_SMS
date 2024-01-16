@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="ddd.css">
+</head>
+<body>
+
+    <header style="border-radius: 10px;">
+        <h1 style="color: bisque;">Student Management System</h1>
+    </header>
+
+    <section id="app">
+        <div id="student-list">
+            <!-- Student list will be displayed here -->
+        </div>
+
+        <div id="add-student-form">
+            <h2>Add New Student</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter student name">
+
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" placeholder="Enter student grade">
+
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Student Management System</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

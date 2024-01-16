@@ -1,0 +1,11 @@
+const int ledpin= 13;
+const int ledpin= A0;
+int thresold = 600;
+void setup()
+{
+    Serial.
+}
+void loop()
+{
+    delay 
+}
